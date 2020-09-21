@@ -29,8 +29,14 @@ namespace branchingAssignment
                 Console.WriteLine("Please enter the length of your package:");
                 decimal length = decimal.Parse(Console.ReadLine());
 
-                decimal dimension = width * height * length;
-                decimal quote = dimension / 100;
+                decimal dimension = width + height + length;
+                if (dimension > 50)
+                {
+                    Console.WriteLine("Sorry, package is too big to be shipped. Have a nice day.");
+                }
+                else
+                {
+                    decimal quote = dimension / 100;
                 Console.WriteLine("Your estimated total for shipping this package is: $" + quote);
                 Console.WriteLine("Thank you for using Package Express.");
             }
