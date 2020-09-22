@@ -26,12 +26,14 @@ namespace stringAssignment
             Console.ReadLine();
 
 
-            //Stringbuilder creates a paragrph of text, one sentence at a time.
-            string names = "Gardner";
-            names = "Gardner";  //doesn't change the string it creates a new string.  Too many can slow down the system.
-            //Can use string builders to dynamically change the string
+            
             StringBuilder sb = new StringBuilder();
-            sb.Append("Gardner" + "\n We gave you a chance" + "\n To water the plants." + "\n We didn't mean that way-" + "\n Now zip up your pants." + "\n By Shel Silverstein");
+            sb.Append("Gardner \n");
+            sb.Append("We gave you a chance \n");
+            sb.Append("To water the plants.\n");
+            sb.Append("We didn't mean that way-\n");
+            sb.Append("Now zip up your pants.\n");
+            sb.Append("By Shel Silverstein");
             Console.WriteLine(sb);
             Console.ReadLine();
         }
