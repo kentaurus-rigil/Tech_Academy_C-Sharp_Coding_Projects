@@ -10,7 +10,7 @@ namespace stringAssignment
     {
         static void Main(string[] args)
         {
-            //An efficient conatenation.
+            //An efficient concatenation.
             //string userName = "<Type your name here>";
             //string date = DateTime.Today.ToShortDateString();
 
