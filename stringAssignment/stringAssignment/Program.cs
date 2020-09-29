@@ -10,12 +10,15 @@ namespace stringAssignment
     {
         static void Main(string[] args)
         {
-            //Concatenate three strings.
-            string userName = "<Type your name here>";
-            string date = DateTime.Today.ToShortDateString();
+            //An efficient conatenation.
+            //string userName = "<Type your name here>";
+            //string date = DateTime.Today.ToShortDateString();
 
-            string str = $"Hello {userName}.  Today is {date}.";
-            System.Console.WriteLine(str);
+            //string str = $"Hello {userName}.  Today is {date}.";
+
+            //Concatenate three strings for the assignment.
+            string text = "Star" +" "+ "Healani" +" "+ "Erickson";
+            System.Console.WriteLine(text);
             Console.ReadLine();
 
 
