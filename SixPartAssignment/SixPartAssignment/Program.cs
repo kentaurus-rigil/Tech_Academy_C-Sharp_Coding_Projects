@@ -87,7 +87,7 @@ namespace SixPartAssignment
             }
             Console.ReadLine();
 
-                
+
 
 
 
@@ -99,65 +99,65 @@ namespace SixPartAssignment
 }
 
 
-            
-            
 
 
 
 
-                    ////This is an integer array
-                    //int[] testScores = { 98, 99, 85, 70, 82, 34, 91, 90, 94 };
-
-                    //   // In the for loop we set the conditions.i = 0(where the loop starts);
-                    //    //i < testScores.Length(how long it runs); i++(how many loops);
-                    //    for (int i = 0; i < testScores.Length; i++)
-                    //        //Below is what you want the loop to do
-                    //    {   //[i] is the item greater than 85 do this.
-                    //        if (testScores[i] > 85)
-                    //        {
-                    //            Console.WriteLine("Passing test score: " + testScores[i]);
-                    //        }
-                    //    }
-
-                    //                    Console.ReadLine();
 
 
+////This is an integer array
+//int[] testScores = { 98, 99, 85, 70, 82, 34, 91, 90, 94 };
 
-                    //List<int> testScores = new List<int>();
-                    //testScores.Add(98);
-                    //testScores.Add(98);
-                    //testScores.Add(81);
-                    //testScores.Add(72);
-                    //testScores.Add(70);
+//   // In the for loop we set the conditions.i = 0(where the loop starts);
+//    //i < testScores.Length(how long it runs); i++(how many loops);
+//    for (int i = 0; i < testScores.Length; i++)
+//        //Below is what you want the loop to do
+//    {   //[i] is the item greater than 85 do this.
+//        if (testScores[i] > 85)
+//        {
+//            Console.WriteLine("Passing test score: " + testScores[i]);
+//        }
+//    }
 
-                    //foreach (int score in testScores)
-                    //{
-                    //    if (score > 85)
-                    //    {
-                    //        Console.WriteLine("Passing test score:" + score);
-                    //    }
-                    //}
-                    //Console.ReadLine();
+//                    Console.ReadLine();
 
-                    
 
-                    //List<int> testScores = new List<int>() { 98, 99, 12, 74, 23, 99 };
-                    //List<int> passingScores = new List<int>();
 
-                    //foreach (int score in testScores)
-                    //{
-                    //    if (score > 85)
-                    //    {
-                    //        passingScores.Add(score);
-                    //    }
-                    //}
-                    //Console.WriteLine(passingScores.Count);//Count is the same as Length in array.  It writes the number of elements in the List.
-                    //Console.ReadLine();
+//List<int> testScores = new List<int>();
+//testScores.Add(98);
+//testScores.Add(98);
+//testScores.Add(81);
+//testScores.Add(72);
+//testScores.Add(70);
 
-               // }
-       // }
-   // }
+//foreach (int score in testScores)
+//{
+//    if (score > 85)
+//    {
+//        Console.WriteLine("Passing test score:" + score);
+//    }
+//}
+//Console.ReadLine();
 
-    
+
+
+//List<int> testScores = new List<int>() { 98, 99, 12, 74, 23, 99 };
+//List<int> passingScores = new List<int>();
+
+//foreach (int score in testScores)
+//{
+//    if (score > 85)
+//    {
+//        passingScores.Add(score);
+//    }
+//}
+//Console.WriteLine(passingScores.Count);//Count is the same as Length in array.  It writes the number of elements in the List.
+//Console.ReadLine();
+
+// }
+// }
+// }
+
+
 
 
