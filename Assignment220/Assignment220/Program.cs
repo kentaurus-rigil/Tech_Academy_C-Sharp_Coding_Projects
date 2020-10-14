@@ -36,11 +36,3 @@ namespace Assignment220
     }
     }
 
-//Class1 ObjOne = new Class1();
-//int myNum1 = ObjOne.method(100);
-//double myNum2 = ObjOne.method(4.3, 6.26);
-//int myNum3 = ObjOne.method("200", "100");
-//Console.WriteLine("Int: " + myNum1);
-//                Console.WriteLine("Double: " + myNum2);
-//                Console.WriteLine("String: " + myNum3);
-//                Console.ReadLine();
