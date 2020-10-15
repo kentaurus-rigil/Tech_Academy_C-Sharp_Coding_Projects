@@ -36,7 +36,7 @@ namespace TwentyOne
             //deck.Cards = new List<Card>();
 
 
-            //Card cardOne = new Card();
+            //Card cardOne = new Card() {Face = "King", Suit = "Spades"};
             //cardOne.Face = "Queen";
             //cardOne.Suit = "Spades";
 
