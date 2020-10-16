@@ -10,6 +10,8 @@ namespace Assignment240
     {
         public string firstName { get; set; }
         public string lastName { get; set; }
+        public int ID { get; set; }
         public abstract void SayName();
+        
     }
 }
