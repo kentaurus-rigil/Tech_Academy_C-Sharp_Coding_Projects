@@ -10,14 +10,22 @@ namespace _21
     {
         static void Main(string[] args)
         {
-            TwentyOneGame game = new TwentyOneGame();
-            game.Players = new List<string>() { "Jesse", "Bill", "Bob" };
-            game.ListPlayers();
-            Console.ReadLine();
-            
-            
-            //Deck deck = new Deck();
-            //deck.Shuffle(3);
+
+            Game game = new TwentyOneGame();
+            game.Players = new List<Player>();//Must instantiate a list before adding a player
+            Player player = new Player();
+            player.Name = "Jesse";
+            game += player;
+            game -= player;
+
+            //TwentyOneGame game = new TwentyOneGame();
+            //game.Players = new List<string>() { "Jesse", "Bill", "Bob" };
+            //game.ListPlayers();
+            //Console.ReadLine();
+
+
+            Deck deck = new Deck();
+            deck.Shuffle(3);
 
             //foreach (Card card in deck.Cards)
             //{
