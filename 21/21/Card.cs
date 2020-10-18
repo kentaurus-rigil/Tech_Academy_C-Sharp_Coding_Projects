@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _21
 {
-    public class Card
+    public struct Card
     {
         public Suit Suit { get; set; }//class is a cookie cutter, and object is the cookie.
         public Face Face { get; set; }
