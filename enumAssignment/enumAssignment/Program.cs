@@ -10,7 +10,7 @@ namespace enumAssignment
     {
         static void Main(string[] args)
         {
-            bool tryIt = true;
+            bool tryIt = true; //A cool trick to loop my code, so the screen stays functional
             while (tryIt)
             {
                 try
