@@ -10,17 +10,28 @@ namespace _21
     {
         static void Main(string[] args)
         {
-            //int number = 5; //class is a reference type and struct is a value type that can't inherit
-                            //None nullable data types: structs, boolean, integers, daytime
+            Deck deck = new Deck();
 
-            Card card1 = new Card();
-            Card card2 = card1;
-            card1.Face = Face.Eight;
-            card2.Face = Face.King;
+            //int count = deck.Cards.Count(x => x.Face == Face.Ace);
 
-            Console.WriteLine(card1.Face);
+            //List<Card> newList = deck.Cards.Where(x => x.Face == Face.King).ToList();
 
-            //Deck deck = new Deck();
+            List<int> numberList = new List<int>() { 1, 2, 3, 535, 342, 23 };
+
+            //int sum = numberList.Where(x => x > 20).Sum();  ////Creates a new list with all the numbers over 20 and adds them.
+
+            //int sum = numberList.Sum(x => x + 5);
+            //int sum = numberList.Max();
+            //int sum = numberList.Min();
+
+
+
+            Console.WriteLine(sum);
+            //foreach (Card card in newList)
+            //{
+            //    Console.WriteLine(card.Face);
+            //}
+            
             //deck.Shuffle(3);
 
             //foreach (Card card in deck.Cards)
@@ -30,36 +41,7 @@ namespace _21
             //Console.WriteLine(deck.Cards.Count);
             Console.ReadLine();
 
-
-            //Game game = new TwentyOneGame();
-            //game.Players = new List<Player>();//Must instantiate a list before adding a player
-            //Player player = new Player();
-            //player.Name = "Jesse";
-            //game += player;
-            //game -= player;
-
-            //TwentyOneGame game = new TwentyOneGame();
-            //game.Players = new List<string>() { "Jesse", "Bill", "Bob" };
-            //game.ListPlayers();
-            //Console.ReadLine();
-
-
-
-
-            //Polymorphism-ability of a class to morph into it inheriting class
-            //List<Game> games = new List<Game>();
-            //TwentyOneGame game = new TwentyOneGame();
-            //games.Add(game);
-
-
-            //Inheritance
-            //TwentyOneGame game = new TwentyOneGame();
-            //game.Players = new List<string>() { "Jesse", "Bill", "Joe" };
-            //game.ListPlayers();
-            //game.Play();
-            //Console.ReadLine();
-
-
         }
+           
     }
 }
