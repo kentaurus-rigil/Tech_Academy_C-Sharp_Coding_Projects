@@ -15,10 +15,11 @@ namespace StreamWriterAssignment
             string userNum = Console.ReadLine();
             using (StreamWriter file = new StreamWriter(@"C:\Users\guesttta\Documents\GitHub\Tech_Academy_C-Sharp_Coding_Projects\SWAssignment.txt", true))
             {
-                file.WriteLine(userNum);
+                file.WriteLine(userNum);  
             }
+            var newFile = File.ReadAllText("C:\\Users\\guesttta\\Documents\\GitHub\\Tech_Academy_C-Sharp_Coding_Projects\\SWAssignment.txt");
+            Console.WriteLine(newFile);
             Console.ReadLine();
-
         }
     }
 }
