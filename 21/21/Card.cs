@@ -10,6 +10,10 @@ namespace _21
     {
         public Suit Suit { get; set; }//class is a cookie cutter, and object is the cookie.
         public Face Face { get; set; }
+        public override string ToString()
+        {
+            return string.Format("{0} of {1}, ", Face, Suit);
+        }
 
     }
     public enum Suit
