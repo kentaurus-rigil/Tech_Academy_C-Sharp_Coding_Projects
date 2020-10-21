@@ -20,6 +20,7 @@ namespace _21
             Console.WriteLine(card);
             using (StreamWriter file = new StreamWriter(@"C: \Users\guesttta\Documents\GitHub\Tech_Academy_C - Sharp_Coding_Projects\step286.txt", true))
             {
+                file.WriteLine(DateTime.Now);
                 file.WriteLine(card);
             }
                 Deck.Cards.RemoveAt(0);
