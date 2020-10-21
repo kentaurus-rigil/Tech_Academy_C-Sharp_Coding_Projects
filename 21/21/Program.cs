@@ -1,24 +1,19 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.IO;
+using Casino;
+using Casino.TwentyOne;
 
-namespace _21
+namespace TwentyOne
 {
     class Program
     {
         static void Main(string[] args)
         {
-            //DateTime dateTime = new DateTime(1995, 5, 23, 8, 32, 45);
-            //DateTime yearOfBirth = new DateTime(1995, 5, 23, 8, 32, 45);
-            //DateTime yearOfGraduation = new DateTime(2013, 6, 1, 16, 34, 22);
+            const string casinoName = "Grand Hotel and Casino";
 
-            //TimeSpan ageAtGraduation = yearOfGraduation - yearOfBirth;
-            
+            //var newDictionary = new Dictionary<string, string>();
+            //var newPlayer = new Player("Star");
 
-            Console.WriteLine("Welcome to the Grand Hotel and Casino.  Let's start by telling me your name.");
+            Console.WriteLine("Welcome to the {0}.  Let's start by telling me your name.", casinoName);
             string playerName = Console.ReadLine();
             Console.WriteLine("And how much money did you bring today?");
             int bank = Convert.ToInt32(Console.ReadLine());
