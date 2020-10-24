@@ -17,8 +17,7 @@ namespace ConstantAssignment2
         }
         public string Name { get; set; }
         public int EmployeeID { get; set; }
-        Employee emp = new Employee("This is a name");
-        Console.WriteLine(emp.EmployeeID);
+        
     }
 }
     
