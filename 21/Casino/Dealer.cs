@@ -18,12 +18,8 @@ namespace Casino
             Hand.Add(Deck.Cards.First());
             string card = string.Format(Deck.Cards.First().ToString() + "\n");
             Console.WriteLine(card);
-            //using (StreamWriter file = new StreamWriter(@"C: \Users\guesttta\Documents\GitHub\Tech_Academy_C - Sharp_Coding_Projects\step286.txt", true))
-            //{
-            //    file.WriteLine(DateTime.Now);
-            //    file.WriteLine(card);
-            //}
-                Deck.Cards.RemoveAt(0);
+
+            Deck.Cards.RemoveAt(0);
         }
 
 

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using Casino;
 using Casino.TwentyOne;
 
@@ -10,8 +11,7 @@ namespace TwentyOne
         {
             const string casinoName = "Grand Hotel and Casino";
 
-            //var newDictionary = new Dictionary<string, string>();
-            //var newPlayer = new Player("Star");
+            //Guid identifier = Guid.NewGuid();
 
             Console.WriteLine("Welcome to the {0}.  Let's start by telling me your name.", casinoName);
             string playerName = Console.ReadLine();
@@ -22,6 +22,11 @@ namespace TwentyOne
             if (answer == "yes" || answer == "yeah" || answer == "y" || answer == "ya") 
             {
                 Player player = new Player(playerName, bank);
+                player.Id = Guid.NewGuid();
+                using (StreamWriter file = new StreamWriter(@"C:\Users\guesttta\Documents\GitHub\Tech_Academy_C-Sharp_Coding_Projects\step286.txt", true))
+                {
+                    file.WriteLine(player.Id); 
+                }
                 Game game = new TwentyOneGame();
                 game += player;
                 player.isActivelyPlaying = true;
