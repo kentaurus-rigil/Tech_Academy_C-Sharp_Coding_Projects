@@ -14,6 +14,9 @@ namespace ConstantAssignment2
             Console.WriteLine(employeeName);
 
             var newDictionary = new Dictionary<string, string>();
+
+            Employee emp = new Employee("Marie Curie");
+            Console.WriteLine(emp.EmployeeID);
         }
     }
 }
