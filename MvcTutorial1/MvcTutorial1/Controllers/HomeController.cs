@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MvcTutorial1.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -10,23 +11,15 @@ namespace MvcTutorial1.Controllers
     {
         public ActionResult Index()
         {
-            //string text = "Hello";
-            //System.IO.File.WriteAllText(@"C:\Users\guesttta\Documents\GitHub\Tech_Academy_C-Sharp_Coding_Projects\Mvc.txt", text);
-            //return View();
-
-            //Random rnd = new Random(10);
-            //int num = rnd.Next();
-
-            //if (num > 20000)
-
             {
-                //return RedirectToAction("Contact");
-                //return Content("Hello!");
+                User user = new User();
+                user.Id = 1;
+                user.FirstName = "Jesse";
+                user.LastName = "Johnson";
+                user.Age = 32;
+                return View(user);
             }
-
-            return View();
-
-            //ViewBag.RandomNumber = num;
+            
 
         }
 
