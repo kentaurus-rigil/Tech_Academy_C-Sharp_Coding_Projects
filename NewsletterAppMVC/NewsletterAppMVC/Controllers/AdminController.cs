@@ -20,7 +20,7 @@ namespace NewsletterAppMVC.Controllers
                 //var signups = db.SignUps.Where(x => x.Removed == null).ToList();
                 var signups = (from c in db.SignUps
                                 where c.Removed == null 
-                                select c).ToList();
+                                select c).ToList(); //Linq is easier to read
                 var signupVms = new List<SignupVm>();
                 foreach (var signup in signups)
                 {
