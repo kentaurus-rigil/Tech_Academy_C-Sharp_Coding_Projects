@@ -58,7 +58,7 @@ namespace CarInsurance.Controllers
                 {
                     insuree.Quote += 100;
                 }
-                else if(age > 19 || age < 25 )
+                else if(age > 19 && age < 25 )
                 {
                     insuree.Quote += 50;
                 }
@@ -100,7 +100,7 @@ namespace CarInsurance.Controllers
 
                 db.Insurees.Add(insuree);
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("Details", new {insuree.Id});
             }
 
             return View(insuree);
@@ -130,9 +130,56 @@ namespace CarInsurance.Controllers
         {
             if (ModelState.IsValid)
             {
+                insuree.Quote = 50;
+                var today = DateTime.Now.Year;
+                var age = today - insuree.DateOfBirth.Year;
+
+                if (age <= 18)
+                {
+                    insuree.Quote += 100;
+                }
+                else if (age > 19 && age < 25)
+                {
+                    insuree.Quote += 50;
+                }
+                else if (age > 25)
+                {
+                    insuree.Quote += 25;
+                }
+                if (insuree.CarYear < 2000)
+                {
+                    insuree.Quote += 25;
+                }
+                if (insuree.CarYear > 2015)
+                {
+                    insuree.Quote += 25;
+                }
+                if (insuree.CarMake == "Porsche")
+                {
+                    insuree.Quote += 25;
+                }
+                if (insuree.CarMake == "Porsche" && insuree.CarModel == "911 Carrera")
+                {
+                    insuree.Quote += 25;
+                }
+                var SpeedingTicketsFee = insuree.SpeedingTickets * 10;
+                if (SpeedingTicketsFee > 0)
+                {
+                    insuree.Quote += SpeedingTicketsFee;
+                }
+                decimal twentyFive = 1.25M;
+                if (insuree.DUI == true)
+                {
+                    insuree.Quote *= twentyFive;
+                }
+                decimal fifty = 1.5M;
+                if (insuree.CoverageType == true)
+                {
+                    insuree.Quote *= fifty;
+                }
                 db.Entry(insuree).State = EntityState.Modified;
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("Details", new { insuree.Id });
             }
             return View(insuree);
         }
@@ -157,6 +204,7 @@ namespace CarInsurance.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
+
             Insuree insuree = db.Insurees.Find(id);
             db.Insurees.Remove(insuree);
             db.SaveChanges();
